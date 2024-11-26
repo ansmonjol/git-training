@@ -1,6 +1,12 @@
-import { toLowercase, toUppercase, toSnakeCase } from "../utils/transform";
+import { toLowercase, toUppercase, toSnakeCase, getFirstChar } from "../utils/transform";
 
 describe('Transform', () => {
+  describe('getFirstChar', () => {
+    it('should return first character of string', () => {
+      expect(getFirstChar('hello')).toBe('o');
+    });
+  })
+
   describe('toUppercase', () => {
     it('should convert string to uppercase', () => {
       expect(toUppercase('hello')).toBe('HELLO');
