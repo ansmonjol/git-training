@@ -1,5 +1,6 @@
 {
   "text_hello": "Hello",
   "text_world": "World",
-  "text_cancel": "Cancel"
+  "text_cancel": "Cancel",
+  "text_save": "Save"
 }
