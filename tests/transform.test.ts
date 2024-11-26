@@ -10,6 +10,7 @@ describe('Transform', () => {
   describe('toLowercase', () => {
     it('should convert string to lowercase', () => {
       expect(toLowercase('HELLO')).toBe('hello');
+      expect(toLowercase('HOLA')).toBe('Hola');
     });
   })
 })
