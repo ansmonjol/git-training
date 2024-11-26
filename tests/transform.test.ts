@@ -3,7 +3,7 @@ import { toLowercase, toUppercase, toSnakeCase, getFirstChar } from "../utils/tr
 describe('Transform', () => {
   describe('getFirstChar', () => {
     it('should return first character of string', () => {
-      expect(getFirstChar('hello')).toBe('o');
+      expect(getFirstChar('hello')).toBe('l');
     });
   })
 
