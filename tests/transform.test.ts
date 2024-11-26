@@ -1,4 +1,4 @@
-import { toLowercase, toUppercase } from "../utils/transform";
+import { toLowercase, toUppercase, toSnakeCase } from "../utils/transform";
 
 describe('Transform', () => {
   describe('toUppercase', () => {
@@ -11,6 +11,12 @@ describe('Transform', () => {
     it('should convert string to lowercase', () => {
       expect(toLowercase('HELLO')).toBe('hello');
       expect(toLowercase('HOLA')).toBe('Hola');
+    });
+  })
+
+  describe('toSnakeCase', () => {
+    it('should convert string to snake case', () => {
+      expect(toSnakeCase('hello world')).toBe('hello_world');
     });
   })
 })
